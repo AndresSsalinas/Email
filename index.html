@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>StartupX Newsletter</title>
+
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- EMAILJS -->
+  <script
+    type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+
+  <script>
+    (function () {
+
+      emailjs.init("d0UuVZzc6I6HX632W");
+
+    })();
+  </script>
+
+</head>
+
+<body>
+
+  <section class="hero">
+
+    <div class="card">
+
+      <!-- LOGO -->
+      <div class="logo">
+        ✨ StartupX
+      </div>
+
+      <!-- TITULO -->
+      <h1>
+        Únete a nuestro Newsletter
+      </h1>
+
+      <!-- TEXTO -->
+      <p class="description">
+        Recibe contenido exclusivo sobre startups,
+        automatización, inteligencia artificial y marketing digital.
+      </p>
+
+      <!-- FORM -->
+      <form id="form">
+
+        <input
+          type="email"
+          id="email"
+          placeholder="Ingresa tu correo"
+          required
+        />
+
+        <button type="submit">
+          Suscribirme
+        </button>
+
+      </form>
+
+      <p id="message"></p>
+
+    </div>
+
+  </section>
+
+  <script src="app.js"></script>
+
+</body>
+
+</html>
