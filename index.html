@@ -9,42 +9,35 @@
 
   <link rel="stylesheet" href="style.css" />
 
+  <!-- FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
   <!-- EMAILJS -->
-  <script
-    type="text/javascript"
-    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
   <script>
-    (function () {
-
-      emailjs.init("d0UuVZzc6I6HX632W");
-
-    })();
+    emailjs.init("TU_PUBLIC_KEY");
   </script>
 
 </head>
 
 <body>
 
-  <section class="hero">
+  <div class="bg">
 
     <div class="card">
 
       <!-- LOGO -->
       <div class="logo">
-        ✨ StartupX
+        ✦ StartupX
       </div>
 
       <!-- TITULO -->
-      <h1>
-        Únete a nuestro Newsletter
-      </h1>
+      <h1>Únete al Newsletter</h1>
 
-      <!-- TEXTO -->
-      <p class="description">
-        Recibe contenido exclusivo sobre startups,
-        automatización, inteligencia artificial y marketing digital.
+      <p class="subtitle">
+        Recibe insights sobre startups, IA, marketing y automatización.
       </p>
 
       <!-- FORM -->
@@ -53,12 +46,12 @@
         <input
           type="email"
           id="email"
-          placeholder="Ingresa tu correo"
+          placeholder="tu@email.com"
           required
         />
 
         <button type="submit">
-          Suscribirme
+          Suscribirme gratis
         </button>
 
       </form>
@@ -67,7 +60,7 @@
 
     </div>
 
-  </section>
+  </div>
 
   <script src="app.js"></script>
 

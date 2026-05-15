@@ -2,113 +2,107 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  font-family:'Inter', sans-serif;
 }
 
 body{
-  font-family:Arial, sans-serif;
-  background:
-  linear-gradient(
-    135deg,
-    #0f172a,
-    #1e293b,
-    #2563eb
-  );
-
-  min-height:100vh;
+  background:#050814;
+  color:white;
 }
 
-.hero{
+.bg{
   min-height:100vh;
   display:flex;
   justify-content:center;
   align-items:center;
-  padding:20px;
+
+  background:
+    radial-gradient(circle at top, #1e293b 0%, transparent 40%),
+    radial-gradient(circle at bottom, #2563eb33 0%, transparent 50%);
 }
 
 .card{
   width:100%;
-  max-width:450px;
+  max-width:420px;
 
-  background:white;
+  background:rgba(255,255,255,0.05);
+  border:1px solid rgba(255,255,255,0.08);
+  backdrop-filter: blur(16px);
 
   padding:40px;
 
-  border-radius:24px;
+  border-radius:20px;
 
-  box-shadow:
-  0 10px 40px rgba(0,0,0,.3);
+  box-shadow:0 20px 60px rgba(0,0,0,0.6);
 
   text-align:center;
 }
 
 .logo{
-  font-size:30px;
-  font-weight:bold;
-  color:#2563eb;
-  margin-bottom:20px;
-}
-
-h1{
-  font-size:34px;
-  color:#111827;
+  font-size:22px;
+  font-weight:700;
+  color:#60a5fa;
   margin-bottom:15px;
 }
 
-.description{
-  color:#6b7280;
-  line-height:1.7;
-  margin-bottom:30px;
+h1{
+  font-size:28px;
+  margin-bottom:10px;
 }
 
-form{
-  width:100%;
+.subtitle{
+  font-size:14px;
+  color:#94a3b8;
+  margin-bottom:25px;
+  line-height:1.5;
 }
 
 input{
   width:100%;
+  padding:14px;
 
-  padding:16px;
+  border-radius:12px;
+  border:1px solid rgba(255,255,255,0.1);
 
-  border:1px solid #d1d5db;
+  background:rgba(0,0,0,0.3);
+  color:white;
 
-  border-radius:14px;
+  outline:none;
 
   margin-bottom:15px;
+}
 
-  font-size:16px;
+input::placeholder{
+  color:#64748b;
 }
 
 input:focus{
-  outline:none;
-  border-color:#2563eb;
+  border-color:#3b82f6;
 }
 
 button{
   width:100%;
-
-  padding:16px;
+  padding:14px;
 
   border:none;
+  border-radius:12px;
 
-  border-radius:14px;
-
-  background:#2563eb;
+  background:linear-gradient(135deg,#2563eb,#7c3aed);
 
   color:white;
-
-  font-size:16px;
+  font-weight:600;
 
   cursor:pointer;
 
-  transition:.3s;
+  transition:0.2s;
 }
 
 button:hover{
-  background:#1d4ed8;
-  transform:translateY(-2px);
+  transform:scale(1.03);
+  box-shadow:0 10px 30px rgba(59,130,246,0.3);
 }
 
 #message{
-  margin-top:20px;
-  font-weight:bold;
+  margin-top:15px;
+  font-size:14px;
 }
